@@ -1,0 +1,604 @@
+html {
+    font-size: 16px;
+    font-family: 'Molengo', 'Acme', sans-serif;
+}
+body{
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------Additional to javascript-----------------------------------*/
+
+.fixed {
+    position: fixed;
+}
+
+.form-active {
+    position: fixed;
+    background-color: black;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+}
+
+/*---------------------------------------------------------------header-------------------------------------------------*/
+header {
+    background: bottom black;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: auto;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 2rem;
+}
+
+form {
+    display: none;
+}
+
+.logo, .title, nav, .menu-icon, .dropdown {
+    height: 1.5em;
+    padding: 0.25em;
+    margin: 0.25em 0.15em;
+}
+
+
+.logo {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 0.75em;
+    margin-right: 0.5em;
+    padding: 0;
+    background-color: #17178a;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: 600;
+    width: 6em;
+}
+
+nav  > a, nav > span {
+    padding: 0 0.5em;
+    font-size: 0.75em;
+    color: inherit;
+}
+
+
+span:hover {
+    cursor: pointer;
+}
+
+
+form {
+    display: none;
+    background-color: black;
+    width: 100%;
+}
+
+.col2 {
+    width: 100%;
+    margin: 0;
+}
+
+form  > button.btn {
+    padding: 1em;
+}
+
+textarea.form-control{
+    height: 9.92em;
+}
+
+label {
+    margin-bottom: 0.1em;
+}
+
+.btn {
+    background-color: #30e639;
+    margin: 0.3em 0.05em 0.5em 0.05em;
+}
+
+.btn-close {
+    background-color: #cf2121;
+    margin: 0.3em 0.05em 0.5em 0.05em;
+
+}
+
+.contact-btn:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+
+.dropdown-toggle {
+    background-image: url("../images/menu.png");
+}
+
+button.dropdown-toggle {
+    width: 45%;
+    height: 100%;
+}
+
+.dropdown-menu a, .dropdown-menu span {
+    text-decoration: none;
+    text-shadow: none;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+/*----------------------------------------------jumbotron--------------------------------------------------------------*/
+
+.jumbotron > .container {
+    margin: 0;
+    height: 100%;
+}
+.jumbotron {
+    background: url("../images/Awesome Space Backgrounds for Desktop HD wallpaper background.jpg") no-repeat center top;
+    background-size: 100%;
+    height: 38em;
+}
+
+
+.welcome-cover {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.welcome-cover > h1{
+    font-size: 14em;
+    padding: 1em 0.08em 0em 0.08em;
+}
+
+/*----------------------------------------------------section-----------------------------------------------------------*/
+.contenter {
+    background-color: white;
+}
+
+.main{
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+    height: auto;
+    background-color: white;
+    font-size: 1.6rem;
+}
+div.row.text-center {
+    width: 100%;
+    margin: 0;
+}
+/*-----------------------------------------------about------------------------------------------------------------------*/
+
+#about {
+    width: 80%;
+    text-align: left;
+}
+
+#about h2 {
+    font-weight: 200;
+}
+
+#about p, #about p > span {
+    overflow-wrap: break-word;
+}
+
+#about p > span {
+    text-decoration: underline;
+}
+#about p > span:hover,#about p > span:active  {
+    color: #337ab7;
+}
+
+/*------------------------------------------------projects-------------------------------------------------------------*/
+#projects {
+    background: -webkit-linear-gradient(white, #5fb7e3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #5fb7e3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #5fb7e3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #5fb7e3); /* Standard syntax */
+}
+
+#projects h2, #animations h2{
+    font-size: 3.5em;
+    padding: 0em 0.8em 0.3em 0.8em;
+}
+
+.image-box {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+#projects h4{
+    font-size: 1.2em;
+    padding: 0.1em 0.5em;
+    text-align: center;
+}
+
+#projects p {
+    font-size: 0.9em;
+    padding: 0.4em 1em;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+span ~ img {
+    width: 80%;
+    height: 90%;
+}
+
+#prototype {
+    width: 60%;
+    padding: 0.5em;
+}
+
+section > div {
+    width: 100%;
+}
+
+/*------------------------------------------------slider----------------------------------------------------------------*/
+
+.slide {
+    display: none;
+    position: absolute;
+}
+
+.slide-active {
+    display: inline-block;
+}
+
+.slidertwo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+
+.arrow-prev {
+    order: 1
+}
+.arrow-next {
+    order: 3;
+}
+
+.slider {
+    order: 2;
+    border: solid;
+    width: 95%;
+    height: 16em;
+    display: inline-block;
+}
+
+
+/*-----------------------------------------------#animations------------------------------------------------------------*/
+#animations {
+    background: #e0ffff; /* For browsers that do not support gradients */
+    height: 28em;
+    background: -webkit-linear-gradient(top, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
+    background: -o-linear-gradient(top, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
+    background: -moz-linear-gradient(top, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
+    background: linear-gradient(to bottom, rgba(0, 141, 210, 0.63) 0%, transparent 100%);
+}
+
+#animations p {
+    text-align: justify;
+    padding: 0.5em;
+}
+
+
+
+
+/*---------------------------------------------------------footer------------------------------------------------------*/
+footer {
+    padding-top: 3em;
+    background: white;
+    margin: 0;
+    width: 100%;
+}
+
+footer.container {
+    /*margin: 0;*/
+    width: 100%;
+    padding: 1em;
+}
+
+.active {
+    display: inherit;
+}
+
+
+p.ele-head {
+    z-index: 95;
+}
+
+/*--------------------------------------------------------responsive design----------------------------------------------*/
+
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+
+    html {
+        font-size: 10px
+    }
+
+    header {
+        height: 2.5em;
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+    .dropdown-toggle {
+        background-image: url("../images/menu (1).png");
+    }
+
+    button.dropdown-toggle {
+        width: 10%;
+    }
+
+    #projects p {
+        padding: 0.4em 1.2em 0.4em 0;
+    }
+
+    #projects h4 {
+        padding: 0.6em;
+    }
+
+    .arrow-prev, .arrow-next {
+        width: 2em;
+        height: 1.5em;
+    }
+
+    span.arrow-prev img, span.arrow-next img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide {
+        width: 85%;
+    }
+
+    .slide-active {
+        max-width: 80%;
+    }
+
+    .slider {
+        height: 27em;
+    }
+
+    .imagee {
+        max-width: 60%;
+        max-height: 18%;
+    }
+
+    .wrapper {
+        position: static;
+        /*margin-left: 120px;*/
+        /*margin-bottom: 100px;*/
+    }
+
+    .ele-wrapper {
+        margin-top: 240px;
+        margin-left: -35px;
+    }
+
+    footer {
+        margin-top: 60px;
+        margin-bottom: 5px;
+    }
+}
+
+/*/ Small screens phones*!*/
+@media only screen {
+
+    header .row {
+        margin: 0;
+    }
+
+    .dropdown {
+        display: inline;
+    }
+
+    .main-list {
+        display: none;
+    }
+
+    .jumbotron {
+        font-size: 5px;
+    }
+
+    #about {
+        text-align: center;
+        width: 100%;
+        margin: 1em;
+        line-height: 1.2em;
+    }
+    #about p {
+        text-align: justify;
+    }
+
+    #about,  #about h4, #about p {
+        padding: 1em;
+    }
+
+    #about h2 {
+        font-size: 3em;
+        padding: 0.2em 0.5em;
+    }
+
+}
+
+/*// tablets, these days phones*/
+@media only screen and (min-width: 768px) {
+
+    #about {
+        text-align: center;
+    }
+
+    #about p {
+        text-align: justify;
+    }
+
+    #about {
+        width: 80%;
+        position: relative;
+        left: 6em;
+        padding: 0.5em;
+    }
+
+    #about h2 {
+        padding: 0.3em;
+        font-size: 4em;
+        font-weight: 200;
+    }
+
+    #about p, #about p > span {
+        overflow-wrap: break-word;
+        padding: 0.8rem 0;
+    }
+
+    .slide {
+        width: 86.5%;
+        height: 95%;
+        padding: 1em;
+    }
+
+    #prototype {
+        height: 100%;
+    }
+
+    .ele-wrapper {
+        margin-top: 400px;
+        margin-left: 125px;
+    }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    .jumbotron  {
+        font-size: 9px;
+    }
+    .dropdown {
+        float: left;
+    }
+
+    header {
+        align-items: center;
+        height: 2.5em;
+        display: flex;
+        align-content: stretch;
+        flex-wrap: wrap;
+    }
+
+
+    #projects h4 {
+        padding: 1em;
+    }
+
+    #prototype {
+        width: 57%;
+    }
+
+    .slide-active {
+        max-width: 76%;
+    }
+
+    .slider {
+        height: 26em;
+    }
+
+    .imagee {
+        max-width: 60%;
+        max-height: 18%;
+    }
+
+    .ele-wrapper {
+        margin-left: 40px;
+        margin-top: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    header > div {
+        display: inline-flex;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .jumbotron {
+        font-size: 11px;
+
+    }
+
+    .slide-active {
+        max-width: 83%;
+    }
+
+    .slider {
+        height: 20em;
+    }
+
+    .imagee {
+        max-width: 90%;
+        max-height: 30%;
+    }
+
+    #prototype {
+        width: 85%;
+    }
+
+    #projects p {
+        padding: 0;
+    }
+
+
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+/*// Desktop*/
+@media only screen and (min-width: 1025px) {
+
+    header {
+        position: fixed;
+    }
+
+    .main-list {
+        display: inline;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .jumbotron {
+        margin-top: 2.8em;
+        font-size: 18px;
+    }
+
+}

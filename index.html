@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="monikossite, monika'ssite, personal site, developer's site" />
+    <meta name="description" content="Personal site about student named Monika. This site is developed to learn and to say a little bit about myself." />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika's site</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Molengo" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/restyle.css" type="text/css">
+    <link rel="stylesheet" href="styles/mystyle.css" type="text/css">
+    <link rel="icon" href="images/logo.png">
+    <script src="main.js"></script>
+</head>
+<body>
+<header>
+    <div class="row">
+        <img src="images/logo.png" class="logo col-sm-1">
+        <h3 class="title col-sm-3">Monika's site</h3>
+        <nav class="main-list col-sm-7 text-left">
+            <a href="#about" class="item">About</a>
+            <a href="#projects" class="item">Projects</a>
+            <a href="#animations" class="item">Animations</a>
+            <span  class="contact-btn">Contact</span>
+        </nav>
+        <div class="col-sm-1 dropdown">
+            <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#about">About</a> </li>
+                <li><a href="#projects">Projects</a> </li>
+                <li><a href="#animations">Animations</a> </li>
+                <li><span class="contact-btn">Contact</span> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <form name="contactform" method="post" action="contact.php">
+            <div class="contact-section">
+                <div class="container">
+                    <div class="col-xs-6 form-line">
+                        <div class="form-group">
+                            <label for="name">Your name *</label>
+                            <input type="text" class="form-control" name="name" placeholder=" Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" class="form-control" name="email" placeholder=" Enter Email ">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="subject" class="form-control" name="subject" placeholder=" Enter Subject">
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="form-group">
+                            <label for ="description"> Message *</label>
+                            <textarea  class="form-control" name="description" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn" type="submit" value="submit" name="submit">Send</button>
+                            <button class="btn btn-close" type="button" value="close" name="close">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+<section class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="welcome-cover">
+                    <h1>Welcome</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contenter">
+    <div class="row">
+        <div id="about" class="main">
+            <h2 class="text-left">Hello!</h2>
+            <p>My name is Monika. I'm a computer physics and modeling student. Right now I'm seeking career of full-stack developer. For years I've been wanderer and wonderer with desire to find out secrets of the Universe. However in the university I've seen appealing parts of programming and realised that becoming a programmer would be the best choice for me and for the world yet I'm just at the beginning and there's so much to learn. Though my passion for science and astrophysics especially  haven't vanish anywhere and I hope that won't happen.</p>
+
+            <p>Also, I must say I couldn't live in too crowded city with no nature as I fell a must to maintain balance and go for a walk in a forest or a wild park. But living without theaters, concerts and dances would be a little to sad. Though I don't think of myself as some computer nerd I'm really hard working person and could work for hours non-stop if I see a purpose. Right know I'm working a lot except weekends because I want to learn so much. If you want to ask something or maybe offer a job <span class="contact-btn">text me.</span> </p>
+        </div>
+    </div>
+    <div id="projects" class="main">
+        <h2 class="text-left">Projects</h2>
+        <div class="slidertwo">
+            <span class="arrow-prev"><img src="images/left-arrow%20(1).png"></span>
+            <div class=" slider">
+                <div class="slide slide-active">
+                    <div class="col-sm-6">
+                        <h4>JAVA and SQL project</h4>
+                        <p>I'm working on a project that needs to connect to local database and select data. The database is storing methods how to prepare chemical solutions. Some of these methods needs to be selected everyday. It's a must to select it in to separate sheet and print it daily. Fot this project I'm using SQL and JAVA with JDBC and Swing.</p>
+                    </div>
+                    <div class="image-box col-sm-6 text-center">
+                        <img src="images/Coming.png" class="imagee">
+                        <img src="images/Soon.png" class="imagee">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="col-sm-6">
+                        <h4>HTML, CSS and JAVASCRIPT project</h4>
+                        <p>I've made this site to learn more of HTML, CSS and JAVASCRIPT. I used Bootsrap and JQuery. A little bit of Php was needed too for email submission. At the beginning I've made prototype with Marvel app. Then I started creating a site that I found not appealing enough so I've started once again. In this slide you can see my first prototype site screen shot.</p>
+                    </div>
+                    <div class="col-sm-6 image-box">
+                        <img src="images/prototype.jpg" id="prototype">
+                    </div>
+                </div>
+            </div>
+            <span class="arrow-next"><img src="images/right-arrow%20(1).png"></span>
+        </div>
+    </div>
+    <div id="animations" class="main ele-container">
+        <div class="row col-sm-12 define-size">
+            <h2>Animations</h2>
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <p>I'm learning to create animations. So using mouse you can see this elephant following mouse. It's a fun fun effect with simple javascript code and beautiful css. Unfortunately, I'm not capable yet to make it walking backwards and it's not working on mobile phone or tablet. This amazing walking elephant created <a href="https://codepen.io/FabioG/pen/gaOGja"> Fabio and posted in codepen.io </a> and I applied JS. </p>
+                </div>
+                <div class="wrapper">
+                    <div class="ele-wrapper">
+                        <div class="ele-tail"></div>
+                        <div class="ele-body">
+                            <div class="ele-head">
+                                <div class="ele-eyebrows"></div>
+                                <div class="ele-eyes"></div>
+                                <div class="ele-mouth"></div>
+                                <div class="ele-fang-front"></div>
+                                <div class="ele-fang-back"></div>
+                                <div class="ele-ear"></div>
+                            </div>
+                        </div>
+                        <div class="ele-leg-1 ele-leg-back">
+                            <div class="ele-foot"></div>
+                        </div>
+                        <div class="ele-leg-2 ele-leg-front">
+                            <div class="ele-foot"></div>
+                        </div>
+                        <div class="ele-leg-3 ele-leg-back">
+                            <div class="ele-foot"></div>
+                        </div>
+                        <div class="ele-leg-4 ele-leg-front">
+                            <div class="ele-foot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="container">
+    <div class="row col-xl-12 text-center">
+        <p> All rights &copy; Monika Kazlauskaitė</p>
+    </div>
+</footer>
+</body>
